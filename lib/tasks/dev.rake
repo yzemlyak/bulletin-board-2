@@ -9,6 +9,8 @@ task({ :sample_data => :environment }) do
   Board.destroy_all
   Post.destroy_all
   
+  
+
   5.times do
     board = Board.new
     board.name = Faker::Address.community
